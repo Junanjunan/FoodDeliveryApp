@@ -11,8 +11,8 @@ type RootStackParamList = {
   Home: undefined;
   Details: undefined;
 };
-type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
-type DetailsScreenProps = NativeStackScreenProps<ParamListBase, 'Details'>;
+type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;    // react navigation에서 정해준 타입 지정하는 방법은 react navigation에서 정해준 방식대로 타입 지정(타입스크립트와 좀 다르더라도)
+type DetailsScreenProps = NativeStackScreenProps<ParamListBase, 'Details'>;   
 
 function HomeScreen({navigation}: HomeScreenProps) {
   const onClick = useCallback(() => {
