@@ -71,7 +71,7 @@ function SignIn({ navigation }: SignInScreenProps) {
         </Pressable>
       </View>
       <View style={styles.buttonZone}>
-        <Pressable>
+        <Pressable onPress={toSignUp}>
             <Text>회원가입</Text>
         </Pressable>
       </View>
